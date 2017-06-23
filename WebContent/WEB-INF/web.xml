@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ProjectManagementSystem</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>/WEB-INF/jsp/main.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>MainList</servlet-name>
+  	<servlet-class>com.icnman.controller.MainListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MainList</servlet-name>
+  	<url-pattern>/main.do</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<servlet-class>com.icnman.controller.login.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/login.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- BBS Servlet Area -->
+   <servlet>
+  	<servlet-name>BBSRegister</servlet-name>
+  	<servlet-class>com.icnman.controller.bbs.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BBSRegister</servlet-name>
+  	<url-pattern>/bbs/register.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>BBSRegisterForm</servlet-name>
+  	<servlet-class>com.icnman.controller.bbs.RegisterFormServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BBSRegisterForm</servlet-name>
+  	<url-pattern>/bbs/registerForm.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>BBSMainList</servlet-name>
+  	<servlet-class>com.icnman.controller.bbs.MainListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BBSMainList</servlet-name>
+  	<url-pattern>/bbs/list.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>BBSRead</servlet-name>
+  	<servlet-class>com.icnman.controller.bbs.ReadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BBSRead</servlet-name>
+  	<url-pattern>/bbs/read.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>BBSModify</servlet-name>
+  	<servlet-class>com.icnman.controller.bbs.ModifyFormServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BBSModify</servlet-name>
+  	<url-pattern>/bbs/modify.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>BBSDelete</servlet-name>
+  	<servlet-class>com.icnman.controller.bbs.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BBSDelete</servlet-name>
+  	<url-pattern>/bbs/delete.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Project -->
+  <servlet>
+  	<servlet-name>ProjectList</servlet-name>
+  	<servlet-class>com.icnman.controller.project.MainListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ProjectList</servlet-name>
+  	<url-pattern>/project/list.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ProjectRegisterForm</servlet-name>
+  	<servlet-class>com.icnman.controller.project.RegisterFormServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ProjectRegisterForm</servlet-name>
+  	<url-pattern>/project/registerForm.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ProjectRegister</servlet-name>
+  	<servlet-class>com.icnman.controller.project.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ProjectRegister</servlet-name>
+  	<url-pattern>/project/register.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ProjectModifyFrom</servlet-name>
+  	<servlet-class>com.icnman.controller.project.ModifyFormServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ProjectModifyFrom</servlet-name>
+  	<url-pattern>/project/modifyForm.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ProjectRead</servlet-name>
+  	<servlet-class>com.icnman.controller.project.ReadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ProjectRead</servlet-name>
+  	<url-pattern>/project/read.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ProjectModify</servlet-name>
+  	<servlet-class>com.icnman.controller.project.ModifyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ProjectModify</servlet-name>
+  	<url-pattern>/project/modify.do</url-pattern>
+  </servlet-mapping>
+  <!-- Project Work -->
+  <servlet>
+  	<servlet-name>ProjectWorkRegisterForm</servlet-name>
+  	<servlet-class>com.icnman.controller.projectwork.RegisterFormServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ProjectWorkRegisterForm</servlet-name>
+  	<url-pattern>/projectwork/registerForm.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ProjectWorkRegister</servlet-name>
+  	<servlet-class>com.icnman.controller.projectwork.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ProjectWorkRegister</servlet-name>
+  	<url-pattern>/projectwork/register.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ProjectWorkList</servlet-name>
+  	<servlet-class>com.icnman.controller.projectwork.MainListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ProjectWorkList</servlet-name>
+  	<url-pattern>/projectwork/list.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>UserInfo</servlet-name>
+  	<servlet-class>com.icnman.controller.member.UserInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UserInfo</servlet-name>
+  	<url-pattern>/member/userInfo.do</url-pattern>
+  </servlet-mapping>
+  <!-- Member -->
+  <servlet>
+  	<servlet-name>MemberModifyForm</servlet-name>
+  	<servlet-class>com.icnman.controller.member.ModifyFormServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MemberModifyForm</servlet-name>
+  	<url-pattern>/member/modifyForm.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>MemberModify</servlet-name>
+  	<servlet-class>com.icnman.controller.member.ModifyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MemberModify</servlet-name>
+  	<url-pattern>/member/modify.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>MemberRegisterForm</servlet-name>
+  	<servlet-class>com.icnman.controller.member.RegisterForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MemberRegisterForm</servlet-name>
+  	<url-pattern>/member/registerForm.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>MemberRegister</servlet-name>
+  	<servlet-class>com.icnman.controller.member.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MemberRegister</servlet-name>
+  	<url-pattern>/member/register.do</url-pattern>
+  </servlet-mapping>
+   <servlet>
+  <servlet-name>MemberList</servlet-name>
+  	<servlet-class>com.icnman.controller.member.MainListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MemberList</servlet-name>
+  	<url-pattern>/member/list.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+ 	<servlet-name>MemberRead</servlet-name>
+  	<servlet-class>com.icnman.controller.member.ReadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MemberRead</servlet-name>
+  	<url-pattern>/member/read.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+ 	<servlet-name>MemberDelete</servlet-name>
+  	<servlet-class>com.icnman.controller.member.RemoveServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MemberDelete</servlet-name>
+  	<url-pattern>/member/remove.do</url-pattern>
+  </servlet-mapping>
+  <!--  Error -->
+  <servlet>
+  	<servlet-name>error</servlet-name>
+  	<servlet-class>com.icnman.controller.error.ErrorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>error</servlet-name>
+  	<url-pattern>/error/error.do</url-pattern>
+  </servlet-mapping>
+</web-app>
